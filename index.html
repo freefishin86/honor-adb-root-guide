@@ -161,6 +161,76 @@
       background: var(--border);
       color: var(--text);
     }
+    .hero-card {
+      background: var(--card-bg);
+      border: 2px solid var(--primary);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.1);
+    }
+    .hero-tag {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      background: #fef3c7;
+      color: #92400e;
+      margin-bottom: 10px;
+    }
+    @media (prefers-color-scheme: dark) {
+      .hero-tag {
+        background: #78350f;
+        color: #fde68a;
+      }
+    }
+    .hero-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .hero-desc {
+      font-size: 14px;
+      color: var(--subtext);
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--subtext);
+      margin-bottom: 18px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    @media (min-width: 640px) {
+      .hero-actions {
+        flex-direction: row;
+      }
+      .hero-actions .btn-hero {
+        flex: 2;
+      }
+      .hero-actions .btn-secondary {
+        flex: 1;
+      }
+    }
+    .btn-hero {
+      background: #16a34a;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 12px 20px;
+    }
+    .btn-hero:hover {
+      background: #15803d;
+    }
     footer {
       margin-top: 40px;
       text-align: center;
@@ -183,6 +253,27 @@
         <span class="badge">共 8 项资源</span>
       </div>
     </header>
+
+    <section class="hero-card">
+      <div class="hero-content">
+        <div class="hero-tag">🔥 极力推荐 • 一键全量合集</div>
+        <h2 class="hero-title">荣耀 MagicOS 调优全套合集整合包 (All-in-One)</h2>
+        <p class="hero-desc">无需逐个点击下载！已将全套 18 个优化与自愈恢复批处理脚本、COTA 白皮书、精简指南、7 张分析截图原图以及 4 个核心 APK 安装包（KernelSU、Scene、Shizuku、RT98260）完整打包归档，解压即可一站式取用。</p>
+        <div class="hero-meta">
+          <span>完整体积: 78.7 MB</span>
+          <span>•</span>
+          <span>格式: .zip 压缩包</span>
+          <span>•</span>
+          <span>收录全部 8 项完整资源</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-hero" href="https://ghproxy.net/https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/Honor-MagicOS-All-In-One-FullPack-v1.0.0.zip" download>🚀 国内高速直链一键打包下载 (78.7MB)</a>
+        <a class="btn btn-secondary" href="https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/Honor-MagicOS-All-In-One-FullPack-v1.0.0.zip">🌐 备用全球直链</a>
+      </div>
+    </section>
+
+    <div style="margin-bottom:16px; font-size:14px; font-weight:600; color:var(--subtext);">或按需单项下载：</div>
 
     <main class="grid">
       <!-- 1. 优化脚本包 -->

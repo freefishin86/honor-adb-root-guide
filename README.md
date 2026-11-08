@@ -2,9 +2,11 @@
 
 本项目是针对荣耀 (Honor) 智能手机的底层权限剖析、ADB 调试提权实战、系统深度精简与免 Root 性能调优的开源工程指南。旨在为开发者、极客及高级用户提供可验证、防变砖、零玄学的工程化参考。
 
-> 📦 **全套实战资源一键下载专区**：
-> 本工程全部优化脚本包、技术白皮书、实证截图及配套 APK 工具（KernelSU、Scene、Shizuku）已集中挂载于 Release 统一发布页。
-> 访客进入单个页面即可预览并下载全部 8 个资产：[点击直达 v1.0.0 资源发布与下载页面](https://github.com/freefishin86/honor-adb-root-guide/releases/tag/v1.0.0)
+> 🎁 **全套实战资源一键打包下载 (All-in-One 整合包 78.7MB)**：
+> 无需逐个点击下载！已收录全部 18 个批处理脚本、COTA白皮书、精简指南、7张分析截图原图及 4 个核心 APK 安装包，解压即用：
+> - 🚀 国内高速直链一键下载：[点击直接下载整合包 (78.7MB)](https://ghproxy.net/https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/Honor-MagicOS-All-In-One-FullPack-v1.0.0.zip)
+> - 🌐 在线发布与按需单项下载专区：[访问发布页专区](https://freefishin86.github.io/honor-adb-root-guide/)
+> - 📦 GitHub Releases 归档源：[前往 v1.0.0 归档](https://github.com/freefishin86/honor-adb-root-guide/releases/tag/v1.0.0)
 
 ---
 
