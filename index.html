@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>荣耀手机 (MagicOS) 调优与去遥测全套资源下载专区</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --subtext: #475569;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --accent: #10b981;
+      --border: #e2e8f0;
+      --tag-bg: #eff6ff;
+      --tag-text: #1d4ed8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --text: #f8fafc;
+        --subtext: #94a3b8;
+        --primary: #3b82f6;
+        --primary-hover: #60a5fa;
+        --accent: #34d399;
+        --border: #334155;
+        --tag-bg: #1e3a8a;
+        --tag-text: #93c5fd;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      font-size: 15px;
+      color: var(--subtext);
+      max-width: 680px;
+      margin: 0 auto 16px;
+    }
+    .badge-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 12px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 9999px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 640px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    }
+    .card-header {
+      margin-bottom: 12px;
+    }
+    .card-title {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      word-break: break-all;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: var(--subtext);
+      margin-bottom: 12px;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--subtext);
+      margin-bottom: 16px;
+    }
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.15s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff;
+    }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: var(--subtext);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      background: var(--border);
+      color: var(--text);
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--subtext);
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>荣耀手机 (MagicOS) 实战资源发布中心</h1>
+      <p class="subtitle">本专区聚合了荣耀 MagicOS / EMUI 去遥测、动态云控 COTA 底层实证白皮书、全套优化脚本工具包及配套 APK 安装包。国内直连高速下载。</p>
+      <div class="badge-bar">
+        <span class="badge">版本: v1.0.0</span>
+        <span class="badge">全量开源</span>
+        <span class="badge">免翻加速已生效</span>
+        <span class="badge">共 8 项资源</span>
+      </div>
+    </header>
+
+    <main class="grid">
+      <!-- 1. 优化脚本包 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📦 优化脚本与自愈工具包 (ZIP)</div>
+          <p class="card-desc">包含 NP文件管理器、00至99系列优化/自愈恢复脚本、COTA动态参数导出包及使用说明等18个完整文件。</p>
+          <div class="card-meta">
+            <span>大小: 44.0 MB</span>
+            <span>•</span>
+            <span>格式: .zip</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://ghproxy.net/https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/Honor-MagicOS-Optimization-Scripts.zip" download>🚀 国内高速直链下载</a>
+          <a class="btn btn-secondary" href="https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/Honor-MagicOS-Optimization-Scripts.zip">🌐 备用全球直链</a>
+        </div>
+      </div>
+
+      <!-- 2. COTA白皮书 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📄 COTA 动态云控底层实证白皮书</div>
+          <p class="card-desc">深度解构荣耀 MagicOS 动态云控参数下发机制、云控对续航与性能的影响及防御性自愈实操方案。</p>
+          <div class="card-meta">
+            <span>大小: 21.2 KB</span>
+            <span>•</span>
+            <span>格式: .md</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://ghproxy.net/https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/Honor-MagicOS-COTA-Whitepaper.md" download>🚀 国内高速直链下载</a>
+          <a class="btn btn-secondary" href="https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/Honor-MagicOS-COTA-Whitepaper.md">🌐 备用全球直链</a>
+        </div>
+      </div>
+
+      <!-- 3. 精简指南 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📄 全场景精简去遥测与极致省电指南</div>
+          <p class="card-desc">详细整理 MagicOS 各预装系统应用包名、停用参数、绿黄红三级安全分级清单及避免变砖的安全守则。</p>
+          <div class="card-meta">
+            <span>大小: 24.2 KB</span>
+            <span>•</span>
+            <span>格式: .md</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://ghproxy.net/https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/Honor-MagicOS-Debloat-Guide.md" download>🚀 国内高速直链下载</a>
+          <a class="btn btn-secondary" href="https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/Honor-MagicOS-Debloat-Guide.md">🌐 备用全球直链</a>
+        </div>
+      </div>
+
+      <!-- 4. 原文截图包 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">🖼️ 实证分析与 AI 对话原文截图包</div>
+          <p class="card-desc">全套 7 张高分辨率原始分析截图归档包，完整记录云控抓包分析与系统状态验证过程。</p>
+          <div class="card-meta">
+            <span>大小: 2.15 MB</span>
+            <span>•</span>
+            <span>格式: .zip</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://ghproxy.net/https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/Honor-AI-Screenshots.zip" download>🚀 国内高速直链下载</a>
+          <a class="btn btn-secondary" href="https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/Honor-AI-Screenshots.zip">🌐 备用全球直链</a>
+        </div>
+      </div>
+
+      <!-- 5. Scene 调优工具 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📱 Scene 核心调优工具 (APK)</div>
+          <p class="card-desc">Android 性能监控、动态高刷控制、核心调度调节与应用偏好管理的高级工具。</p>
+          <div class="card-meta">
+            <span>大小: 16.7 MB</span>
+            <span>•</span>
+            <span>格式: .apk</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://ghproxy.net/https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/scenecraked.apk" download>🚀 国内高速直链下载</a>
+          <a class="btn btn-secondary" href="https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/scenecraked.apk">🌐 备用全球直链</a>
+        </div>
+      </div>
+
+      <!-- 6. KernelSU 管理器 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📱 KernelSU 管理器 (APK)</div>
+          <p class="card-desc">基于内核的高级 Root 权限与模块化管理工具（适用于支持内核定制或 GKI 的机型）。</p>
+          <div class="card-meta">
+            <span>大小: 13.0 MB</span>
+            <span>•</span>
+            <span>格式: .apk</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://ghproxy.net/https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/KernelSU_v3.3.1_32680-release.apk" download>🚀 国内高速直链下载</a>
+          <a class="btn btn-secondary" href="https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/KernelSU_v3.3.1_32680-release.apk">🌐 备用全球直链</a>
+        </div>
+      </div>
+
+      <!-- 7. Shizuku 框架 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📱 Shizuku 提权框架 (APK)</div>
+          <p class="card-desc">免 Root 终极方案：将无线 ADB (UID 2000) 权限通过标准 Binder 接口暴露给第三方应用。</p>
+          <div class="card-meta">
+            <span>大小: 2.45 MB</span>
+            <span>•</span>
+            <span>格式: .apk</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://ghproxy.net/https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/shizuku.apk" download>🚀 国内高速直链下载</a>
+          <a class="btn btn-secondary" href="https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/shizuku.apk">🌐 备用全球直链</a>
+        </div>
+      </div>
+
+      <!-- 8. 辅助工具 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📱 权限调优辅助工具 (APK)</div>
+          <p class="card-desc">轻量级 Android 系统权限与系统应用配置辅助工具 (RT98260-v11.45)。</p>
+          <div class="card-meta">
+            <span>大小: 264.8 KB</span>
+            <span>•</span>
+            <span>格式: .apk</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://ghproxy.net/https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/RT98260-v11.45.apk" download>🚀 国内高速直链下载</a>
+          <a class="btn btn-secondary" href="https://github.com/freefishin86/honor-adb-root-guide/releases/download/v1.0.0/RT98260-v11.45.apk">🌐 备用全球直链</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>开源项目: <a href="https://github.com/freefishin86/honor-adb-root-guide" style="color:var(--primary);text-decoration:none;">freefishin86/honor-adb-root-guide</a></p>
+      <p style="margin-top:6px;">全部资源由 GitHub Releases 分发，国内加速由边缘镜像 CDN 提供支持。</p>
+    </footer>
+  </div>
+</body>
+</html>
